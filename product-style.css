@@ -1,0 +1,147 @@
+/* Resets*/
+* {
+  margin: 0px;
+  padding: 0;
+}
+
+html {
+  font-family: "Zen Loop", cursive;
+  background-color: #f2eeed;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+/* Products Main */
+.product__main {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+/* Products Hero */
+.product__hero {
+  width: 100%;
+  display: block;
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.product__hero--image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/png2jpg/brownie-cookie-blondie-mix.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  box-align: center;
+}
+
+.product__hero--text {
+  color: #f2eeed;
+  text-align: center;
+  font-size: 48px;
+  padding: 160px 32px;
+}
+
+.product__hero--text h1 {
+  font-size: 48px;
+  text-decoration: rosybrown underline;
+  font-family: "Zen Loop" bold;
+}
+
+/* Product Grid*/
+.product__grid {
+  display: grid;
+  width: 100vw;
+  font-size: 20px;
+  position: relative;
+  border: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+/*Products submenu*/
+.product__grid--list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+}
+
+.product__grid--list li {
+  float: left;
+}
+
+.product__grid--list li a {
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 25.6px;
+  text-decoration: none;
+}
+
+.product__grid--list li a:hover {
+  background-color: rosybrown;
+}
+/* Proudct Cards*/
+.product__grid--batch {
+  list-style-type: none;
+  display: block;
+  padding: 16px;
+  border-bottom: 16px;
+  box-align: center;
+}
+.product__grid--batch li {
+  display: inline-block;
+  padding: 16px;
+}
+.card {
+  width: 444px;
+}
+
+body {
+  background: #eee;
+}
+.product__grid--image:hover {
+  filter: grayscale(100%);
+}
+
+.product__grid--price {
+  color: rosybrown;
+}
+
+.product__grid--card h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  font-size: 38.4px;
+}
+.product__grid--card p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  font-size: 36.8px;
+}
+
+.product__grid--card button {
+  border: none;
+  outline: 0;
+  padding: 19.2px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 28.8px;
+}
+
+.product__grid--card button:hover {
+  opacity: 0.7;
+}

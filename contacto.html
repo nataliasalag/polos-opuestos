@@ -5,93 +5,189 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Polos Opuestos</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,800;1,200;1,400;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,700&family=Zen+Loop&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,500;1,100;1,200;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&family=Zen+Loop:ital@0;1&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,500;1,100;1,200;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&family=Zen+Loop:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Polos Opuestos</title>
   </head>
   <body>
-    <!--Start on all pages-->
-    <header class="header">
-      <img
-        src="images/png2jpg/polos-opuestos-logo.jpg"
-        alt="logo-polos"
-        class="header__logo"
-      />
-      <h1 class="header__text">Fit & Fat</h1>
-      <div class="header__topnav">
-        <a href="index.html">Home</a>
-        <a href="productos.html">Productos</a>
-        <a href="recetas.html">Recetas</a>
-        <a href="q&a.html">Preguntas Frecuentes</a>
-        <a href="contacto.html">Contacto</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container-fluid">
+        <img
+          src="images/png2jpg/polos-opuestos-logo.jpg"
+          alt="logo-polos"
+          class="header__logo"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="
+              navbar-nav
+              me-auto
+              mb-2 mb-lg-0
+              d-flex
+              justify-content-around
+            "
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="productos.html"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Productos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Brownies</a></li>
+                <li><a class="dropdown-item" href="#">Galletas</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Tortas</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="recetas.html"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Recetas
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">FIT</a></li>
+                <li><a class="dropdown-item" href="#">FAT</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="qa.html"
+                >Preguntas Frecuentes</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
       </div>
-    </header>
+    </nav>
     <!--End on all pages-->
     <main class="contact__main"></main>
-    <h1 class="contact__main--title">¿Tienes dudas, consultas o pedidos especiales?</h1>
-    <p class="contact__main--text">Escríbenos y nos pondremos en contacto a la breveda.</p>
-    <div class="contact__form">
-      <form action="">
-    
-        <label for="fname" class="contact__form--labels">Nombre</label>
-        <input type="text" id="fname" name="firstname" placeholder="Tu nombre..">
-    
-        <label for="lname" class="contact__form--labels">Apellido</label>
-        <input type="text" id="lname" name="lastname" placeholder="Tu apellido..">
-    
-        <label for="country" class="contact__form--labels">Ciudad</label>
-        <select id="country" name="country">
-          <option value="australia">Bogotá</option>
-          <option value="canada">Medellín</option>
-          <option value="usa">Cali</option>
-          <option value="usa">Pereira</option>
-          <option value="usa">Barranquilla</option>
-          <option value="usa">Cartagena</option>
-          <option value="usa">Bucaramanga</option>
-          <option value="usa">Manizales</option>
-          <option value="usa">Santa Marta</option>
-          <option value="usa">Cúcuta</option>
-        </select>
-        <div>
-          <label for="tema" class="contact__form--labels">Pedidos</label>
-          <input type="radio" id="pedidos" name="tema" value="pedido">
-          <br>
-          <label for="genero" class="contact__form--labels">Pregunta</label>
-          <input type="radio" id="pregunta" name="tema" value="pregunta">
-          <br>
-          <label for="genero" class="contact__form--labels">Queja</label>
-          <input type="radio" id="queja" name="tema" value="queja">
-          <br>
-          <label for="genero" class="contact__form--labels">Otro</label>
-          <input type="radio" id="otro" name="genero" value="otro">
-        </div>
-        <br>
-        <label for="subject" class="contact__form--labels">Asunto</label>
-        <textarea id="subject" name="subject" placeholder="Escribir algo.." style="height:200px"></textarea>
-        <br>
-        <div>
-          <label for="newsletterSubscription" class="contact__form--labels">Newsletter</label>
-          <input type="checkbox" id="newsletterSubscription" name="newsletter" value="1">
-        </div>
-        <br>
-        <input type="submit" value="Submit" class="contact__form--buttons">
-        <input type="reset" class="contact__form--buttons">
-      </form>
+    <h1 class="contact__main--title">
+      ¿Tienes dudas, consultas o pedidos especiales?
+    </h1>
+    <p class="contact__main--text">
+      Escríbenos y nos pondremos en contacto a la breveda.
+    </p>
+    <form action="/action_page.php">
+      <div class="form-group">
+        <label for="email">Nombre:</label>
+        <input type="input" class="form-control" id="name">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Apellido:</label>
+        <input type="input" class="form-control" id="lastname">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Email:</label>
+        <input type="email" class="form-control" id="mail">
+      </div>
+      <div class="checkbox">
+        <label><input type="radio"> Pedido</label>
+      </div><div class="checkbox">
+        <label><input type="radio"> Consulta</label>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
     </div>
-    <br>
+    <br />
     <!--Inicio footer todas las páginas-->
-<footer>
-  <div class="footer__bottom-nav">
-      <a>Privacidad</a>
-      <a>Cambios y Devoluciones</a>
-      <a>Contacto</a>
-    </ul>
-  </div>
-</footer>
+    <footer class="footer">
+      <nav
+        class="
+          navbar navbar-expand-lg navbar-light
+          bg-light
+          d-flex
+          justify-content-around
+        "
+      >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarNavAltMarkup d-flex justify-content-around"
+        >
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Privacidad</a>
+            <a class="nav-item nav-link" href="contacto.html">Contacto</a>
+          </div>
+        </div>
+      </nav>
+    </footer>
     <!--Fin footer todas las páginas-->
   </body>
 </html>

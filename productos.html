@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Polos Opuestos</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="product-style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,24 +14,117 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,500;1,100;1,200;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&family=Zen+Loop:ital@0;1&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,500;1,100;1,200;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&family=Zen+Loop:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Polos Opuestos</title>
   </head>
   <body>
-    <!--Start on all pages-->
-    <header class="header">
-      <img
-        src="images/png2jpg/polos-opuestos-logo.jpg"
-        alt="logo-polos"
-        class="header__logo"
-      />
-      <h1 class="header__text">Fit & Fat</h1>
-      <div class="header__topnav">
-        <a href="index.html">Home</a>
-        <a href="productos.html">Productos</a>
-        <a href="recetas.html">Recetas</a>
-        <a href="q&a.html">Preguntas Frecuentes</a>
-        <a href="contacto.html">Contacto</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container-fluid">
+        <img
+          src="images/png2jpg/polos-opuestos-logo.jpg"
+          alt="logo-polos"
+          class="header__logo"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="
+              navbar-nav
+              me-auto
+              mb-2 mb-lg-0
+              d-flex
+              justify-content-around
+            "
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="productos.html"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Productos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Brownies</a></li>
+                <li><a class="dropdown-item" href="#">Galletas</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Tortas</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="recetas.html"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Recetas
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">FIT</a></li>
+                <li><a class="dropdown-item" href="#">FAT</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="qa.html"
+                >Preguntas Frecuentes</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
       </div>
-    </header>
+    </nav>
     <!--End on all pages-->
     <main class="product__main">
       <section class="product__hero">
@@ -54,90 +147,135 @@
             <li><a>Regalos</a></li>
           </ul>
         </div>
-        <div class="product__grid--batch">
-          <ul>
-            <li>
-              <div class="product__grid--card">
-                <img
-                  src="images/png2jpg/blondies.jpg"
-                  alt="blondies"
-                  style="width: 100%"
-                  class="product__grid--image"
-                />
-                <h2>Blondies</h2>
-                <p class="product__grid--price">$20.000COP</p>
-                <p>
-                  8 blondies de PB, con harina de avena, vainilla, chocolate
-                  amargo, Splenda y miel.
-                </p>
-                <p><button>Agregar al carrito</button></p>
-                <!--Estos botones de momento no hacen nada, pero luego serán para agregar al carrito-->
+        <div class="row justify-content-around">
+          <div class="col-sm-2">
+            <div class="card">
+              <div
+                class="d-flex justify-content-center container mt-5 mb-3 ml-2"
+              >
+                <div class="card p-3 bg-white">
+                  <div class="about-product text-center mt-2">
+                    <img src="images/png2jpg/brownies.jpg" width="300" />
+                    <div>
+                      <h4>Brownies</h4>
+                      <h6 class="mt-0 text-black-50">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Excepturi, quibusdam.
+                      </h6>
+                    </div>
+                  </div>
+                  <div
+                    class="
+                      d-flex
+                      justify-content-center
+                      total
+                      font-weight-bold
+                      mt-4
+                    "
+                  >
+                    <span>Total</span><span>$20.000</span>
+                  </div>
+                </div>
               </div>
-            </li>
-            <li>
-              <div class="product__grid--card">
-                <img
-                  src="images/brownies.png"
-                  alt="Brownies"
-                  style="width: 100%"
-                  class="product__grid--image"
-                />
-                <h2>Brownies</h2>
-                <p class="product__grid--price">$20.000COP</p>
-                <p>
-                  8 blondies de harina de avena, cacao, chocolate amargo,
-                  Splenda y miel.
-                </p>
-                <p><button>Agregar al carrito</button></p>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card">
+              <div
+                class="d-flex justify-content-center container mt-5 mb-3 ml-2"
+              >
+                <div class="card p-3 bg-white">
+                  <div class="about-product text-center mt-2">
+                    <img src="images/png2jpg/blondies.jpg" width="300" />
+                    <div>
+                      <h4>Blondies</h4>
+                      <h6 class="mt-0 text-black-50">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Excepturi, quibusdam.
+                      </h6>
+                    </div>
+                  </div>
+                  <div
+                    class="
+                      d-flex
+                      justify-content-center
+                      total
+                      font-weight-bold
+                      mt-4
+                    "
+                  >
+                    <span>Total</span><span>$20.000</span>
+                  </div>
+                </div>
               </div>
-            </li>
-            <li>
-              <div class="product__grid--card">
-                <img
-                  src="images/png2jpg/100-chocolate.jpg"
-                  alt="Triple Chocolate"
-                  style="width: 100%"
-                  class="product__grid--image"
-                />
-                <h2>Triple Chocolate Fit Cake</h2>
-                <p class="product__grid--price">$35.000COP</p>
-                <p>
-                  Harina de avena, miel, cacao, aceite de coco, leche de
-                  almendras & Splenda.
-                </p>
-                <p><button>Agregar al carrito</button></p>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card">
+              <div
+                class="d-flex justify-content-center container mt-5 mb-3 ml-2"
+              >
+                <div class="card p-3 bg-white">
+                  <div class="about-product text-center mt-2">
+                    <img src="images/png2jpg/bites.jpg" width="300" />
+                    <div>
+                      <h4>Bites</h4>
+                      <h6 class="mt-0 text-black-50">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Excepturi, quibusdam.
+                      </h6>
+                    </div>
+                  </div>
+                  <div
+                    class="
+                      d-flex
+                      justify-content-center
+                      total
+                      font-weight-bold
+                      mt-4
+                    "
+                  >
+                    <span>Total</span><span>$20.000</span>
+                  </div>
+                </div>
               </div>
-            </li>
-            <li>
-              <div class="product__grid--card">
-                <img
-                  src="images/png2jpg/bites.jpg"
-                  alt="Bites"
-                  style="width: 100%"
-                  class="product__grid--image"
-                />
-                <h2>Bites</h2>
-                <p class="product__grid--price">$20.000COP</p>
-                <p>
-                  Harina de avena, miel, cacao, aceite de coco, leche de
-                  almendras & Splenda.
-                </p>
-                <p><button>Agregar al carrito</button></p>
-              </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </section>
     </main>
     <!--Inicio footer todas las páginas-->
-<footer class="footer">
-  <div class="footer__bottom-nav">
-      <a>Privacidad</a>
-      <a>Cambios y Devoluciones</a>
-      <a>Contacto</a>
-    </ul>
-  </div>
-</footer>
-<!--Fin footer todas las páginas-->
+    <footer class="footer">
+      <nav
+        class="
+          navbar navbar-expand-lg navbar-light
+          bg-light
+          d-flex
+          justify-content-around
+        "
+      >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarNavAltMarkup d-flex justify-content-around"
+        >
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Privacidad</a>
+            <a class="nav-item nav-link" href="contacto.html">Contacto</a>
+          </div>
+        </div>
+      </nav>
+    </footer>
+    <!--Fin footer todas las páginas-->
   </body>
 </html>

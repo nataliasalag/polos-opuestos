@@ -1,0 +1,113 @@
+/* Resets*/
+* {
+  margin: 0px;
+  padding: 0;
+}
+
+html {
+  font-family: "Zen Loop", cursive;
+  background-color: #f2eeed;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Recipes */
+.main__recipes {
+  position: relative;
+}
+
+.recipe__list--form {
+  font-size: 32px;
+  display: inline;
+}
+.recipe__listing {
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.recipe__listing--headers {
+  font-size: 48px;
+  text-decoration: underline rosybrown;
+  margin: 20.8px;
+}
+
+.recipe__listing--images {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.recipe__listing--longText {
+  font-size: 32px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+}
+
+.recipe__listing--ingredients {
+  list-style-type: square;
+  font-size: 28.8px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+}
+
+.recipe__listing--steps {
+  list-style-type: decimal;
+  font-size: 28.8px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+}
+/* Q&A */
+.main__qa {
+  position: relative;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  margin: 32px;
+}
+
+.qa {
+  margin: 32px;
+  text-decoration: rosybrown underline;
+}
+.qa__envios {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin: 16px;
+  padding-bottom: 16px;
+}
+
+.qa__consideraciones {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  margin: 16px;
+  padding-bottom: 16px;
+}
+
+.qa__precios {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  margin: 16px;
+  padding-bottom: 16px;
+}
+
+.qa__headersText {
+  font-size: 48px;
+}
+.qa__listing--longText {
+  font-size: 32px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+}
+
+/* Divider */
+.divider__rounded {
+  border-top: 12.8px solid #bbb;
+  border-radius: 8px;
+}
