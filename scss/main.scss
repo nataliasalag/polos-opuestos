@@ -1,0 +1,23 @@
+@import "variables";
+@import "header";
+@import "footer";
+@import "index";
+@import "products";
+@import "recipes";
+@import "contact";
+
+/* Resets*/
+* {
+  margin: 0px;
+  padding: 0;
+}
+
+html {
+  font-family: "$main-font", cursive;
+  background-color: #f2eeed;
+}
+
+/* body {
+  width: 100vw;
+  height: 100vh;
+} */

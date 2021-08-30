@@ -1,0 +1,241 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden; }
+  .header .header__logo {
+    max-width: 2.18rem;
+    float: left;
+    clip-path: circle(0.94rem at center);
+    height: 2.18rem;
+    margin-left: 0.5rem; }
+
+.footer {
+  justify-content: space-around;
+  box-sizing: border-box; }
+  .footer__text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.96rem;
+    text-decoration: underline; }
+
+.ihero {
+  width: 100vw;
+  align-self: stretch;
+  position: relative;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  box-sizing: border-box; }
+  .ihero__image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/png2jpg/chocolate-cover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    box-align: center; }
+  .ihero__text {
+    font-family: "Zen Loop";
+    color: #bdb5b5;
+    font-size: 2.4rem;
+    box-sizing: border-box;
+    text-align: center; }
+    .ihero__text--p {
+      padding: 10rem; }
+
+.igrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem; }
+  .igrid__title {
+    font-family: "Zen Loop";
+    font-size: 2.4rem;
+    text-decoration: underline rosybrown;
+    padding-top: 1rem;
+    color: #464141; }
+  .igrid__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem; }
+  .igrid__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rosybrown;
+    border: 0.15rem solid #464141;
+    border-radius: 1rem; }
+    .igrid__item--image {
+      padding: 2rem; }
+    .igrid__item--text {
+      font-size: 1.44rem; }
+
+.phero {
+  width: 100vw;
+  align-self: stretch;
+  position: relative;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  box-sizing: border-box; }
+  .phero__image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/png2jpg/brownie-cookie-blondie-mix.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    box-align: center; }
+  .phero__text--p {
+    font-family: "Zen Loop";
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10rem;
+    font-size: 2.4rem;
+    color: #bdb5b5; }
+
+.pgrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem; }
+  .pgrid__title {
+    font-family: "Zen Loop";
+    font-size: 2.4rem;
+    text-decoration: underline rosybrown;
+    color: #464141;
+    padding-top: 1rem; }
+  .pgrid__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem; }
+  .pgrid__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rosybrown;
+    border: 0.15rem solid #464141;
+    border-radius: 1rem; }
+    .pgrid__item--image {
+      padding: 2rem; }
+    .pgrid__item--texti {
+      font-size: 1.44rem;
+      color: #464141;
+      margin: 1rem;
+      text-align: center;
+      padding: 2rem;
+      box-sizing: content-box;
+      font-family: "Raleway"; }
+    .pgrid__item--textp {
+      font-size: 1.2rem;
+      margin: 1rem;
+      text-align: justify;
+      padding: 0.5rem;
+      box-sizing: content-box;
+      font-family: "Raleway";
+      float: bottom; }
+  .pgrid__atc {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0.15rem solid rosybrown; }
+
+.rfilter {
+  margin: 1rem; }
+  .rfilter__title {
+    font-family: "Zen Loop";
+    margin-left: 1rem;
+    padding-top: 1rem;
+    text-decoration: underline rosybrown;
+    text-align: center;
+    font-size: 2.4rem; }
+
+.rhero {
+  width: 100vw;
+  align-self: stretch;
+  position: relative;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  box-sizing: border-box; }
+  .rhero__image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/png2jpg/chocolate-cover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    box-align: center; }
+  .rhero__text--p {
+    font-family: "Zen Loop";
+    color: #bdb5b5;
+    font-size: 2.4rem;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10rem; }
+
+.rgrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem; }
+  .rgrid__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem; }
+  .rgrid__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rosybrown;
+    border: 0.15rem solid #464141; }
+    .rgrid__item--title {
+      font-size: 2.4rem;
+      text-decoration: underline rosybrown;
+      color: #464141;
+      padding-top: 1rem; }
+    .rgrid__item--image {
+      padding: 0 1rem; }
+    .rgrid__item--subt {
+      text-align: center;
+      color: grey;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem; }
+    .rgrid__item--ul {
+      list-style: square; }
+    .rgrid__item--li {
+      color: black;
+      text-justify: center; }
+
+.contact {
+  margin: 1rem; }
+  .contact__title {
+    font-family: "Zen Loop";
+    font-size: 2.4rem;
+    text-decoration: underline rosybrown;
+    padding-top: 1rem;
+    color: #464141; }
+  .contact__text {
+    font-family: "Raleway"; }
+
+.form-group {
+  margin: 1rem;
+  font-family: "Raleway";
+  color: #464141; }
+
+.checkbox {
+  margin: 1rem; }
+
+.button {
+  border: 0.1rem solid rosybrown; }
+
+/* Resets*/
+* {
+  margin: 0px;
+  padding: 0; }
+
+html {
+  font-family: "$main-font", cursive;
+  background-color: #f2eeed; }
+
+/* body {
+  width: 100vw;
+  height: 100vh;
+} */

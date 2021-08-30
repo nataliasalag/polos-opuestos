@@ -1,0 +1,26 @@
+@import "variables";
+
+.contact {
+  margin: 1rem;
+  &__title {
+    font-family: $main-font;
+    font-size: $title-size;
+    text-decoration: $title-decor;
+    padding-top: $page-title-padding;
+    color: $dark-grey;
+  }
+  &__text {
+    font-family: $secondary-font;
+  }
+}
+.form-group {
+  margin: 1rem;
+  font-family: $secondary-font;
+  color: $dark-grey;
+}
+.checkbox {
+  margin: 1rem;
+}
+.button {
+  border: 0.1rem solid rosybrown;
+}

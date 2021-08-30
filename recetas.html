@@ -5,22 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Polos Opuestos</title>
-    <link rel="stylesheet" href="recipes-style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,500;1,100;1,200;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&family=Zen+Loop:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="index-style.css" />
+    <link rel="stylesheet" href="main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,13 +23,11 @@
     <title>Polos Opuestos</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark header">
       <div class="container-fluid">
-        <img
-          src="images/png2jpg/polos-opuestos-logo.jpg"
-          alt="logo-polos"
-          class="header__logo"
-        />
+        <div class="header__logo">
+          <img src="images/png2jpg/polos-opuestos-logo.jpg" alt="logo-polos" />
+        </div>
         <button
           class="navbar-toggler"
           type="button"
@@ -51,7 +40,15 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-around">
+          <ul
+            class="
+              navbar-nav
+              me-auto
+              mb-2 mb-lg-0
+              d-flex
+              justify-content-around
+            "
+          >
             <li class="nav-item">
               <a
                 class="nav-link active text-white"
@@ -118,122 +115,249 @@
       </div>
     </nav>
     <!--End on all pages-->
-    <main class="main__recipes">
-          <div class="recipe__list"><h1>Índice</h1>
-            <form class="recipe__list--form" action="">
-              <label for="category">Categoría</label>
-              <select id="category" name="category">
-                <option value="postresFit">Postres FIT</option>
-                <option value="postresFat">Postres FAT</option>
-                <option value="saladoFit">Salados FIT</option>
-                <option value="saladoFat">Salados FAT</option>  
-              </select>  
-              <label for="occasion">Ocasión</label>
-              <select id="occasion" name="occasion">
-                <option value="breakfast">Desayuno</option>
-                <option value="snack">Snack</option>
-                <option value="lunch">Almuerzo</option>
-                <option value="dinner">Comida</option>  
-              </select>  
-              <label for="craving">Antojo</label>
-              <select id="craving" name="craving">
-                <option value="sweet">Dulce</option>
-                <option value="salty">Salado</option>
-                <option value="healthy">Saludable</option>
-                <option value="fattening">Engordante</option>  
-              </select>  
-              <label for="ingredients">Ingredientes</label>
-              <select id="ingredients" name="ingredients">
-                <option value="a">A</option>
-                <option value="b">B</option>
-                <option value="c">C</option>
-                <option value="d">D</option>  
-              </select>
-              <label for="time">Tiempo</label>
-              <select id="time" name="time">
-                <option value="a">A</option>
-                <option value="b">B</option>
-                <option value="c">C</option>
-                <option value="d">D</option>  
-              </select>
-              <label for="difficulty">Dificultad</label>
-              <select id="difficulty" name="difficulty">
-                <option value="a">A</option>
-                <option value="b">B</option>
-                <option value="c">C</option>
-                <option value="d">D</option>  
-              </select>
-              <input type="submit" value="Submit">
-            </form>
+    <main>
+      <section class="rhero">
+        <div class="rhero__image">
+          <div class="rhero__text--p">
+            <p>
+              RECETAS<br />Prepara tus recetas fit y fat preferidad cuando
+              quieras!
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--esto eventualmente va a ser un filtro, cuando aprenda cómo hacerlo-->
+      <section class="rfilter">
+        <h1 class="rfilter__title">Índice</h1>
+        <div class="form-check form-switch">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="flexSwitchCheckChecked"
+            checked
+          />
+          <label class="form-check-label" for="flexSwitchCheckChecked"
+            >Dulce</label
+          >
+        </div>
+        <div class="form-check form-switch">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="flexSwitchCheckChecked"
+            checked
+          />
+          <label class="form-check-label" for="flexSwitchCheckChecked"
+            >Salado</label
+          >
+        </div>
+        <div class="form-check form-switch">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="flexSwitchCheckChecked"
+            checked
+          />
+          <label class="form-check-label" for="flexSwitchCheckChecked"
+            >Fat</label
+          >
+        </div>
+        <div class="rform-check form-switch">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="flexSwitchCheckChecked"
+            checked
+          />
+          <label class="form-check-label" for="flexSwitchCheckChecked"
+            >Fit</label
+          >
+        </div>
+      </section>
+      <section>
+        <div class="rgrid">
+          <div class="rgrid__items">
+            <div class="rgrid__item">
+              <h2 class="rgrid__item--title">Chipas</h2>
+              <div class="rgrid__item--image">
+                <img
+                  src="http://pralinecakes.com/wp-content/uploads/2019/01/IMG_2112-scaled.jpg"
+                  alt="chipa"
+                  width="100%"
+                />
+                <h3 class="rgrid__item--subt">Ingredientes</h3>
+                <ul class="rgrid__item--ul">
+                  <li class="rgrid__item--li">150gr queso pategrás rallado</li>
+                  <li class="rgrid__item--li">150gr queso provolone rallado</li>
+                  <li class="rgrid__item--li">
+                    500gr harina o fécula de mandioca
+                  </li>
+                  <li class="rgrid__item--li">100gr manteca</li>
+                  <li class="rgrid__item--li">3 huevos</li>
+                  <li class="rgrid__item--li">1 cdita polvo de hornear</li>
+                  <li class="rgrid__item--li">130ml leche</li>
+                </ul>
+                <ol class="rgrid__item--ol">
+                  <li class="rgrid__item--li">Lorem ipsum dolor sit amet..</li>
+                  <li class="rgrid__item--li">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsum, delectus.
+                  </li>
+                  <li class="rgrid__item--li">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Perspiciatis labore non iusto aut.
+                  </li>
+                  <li class="rgrid__item--li">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </li>
+                  <li class="rgrid__item--li">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maxime, amet rerum.
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <div class="rgrid__item">
+              <h2 class="rgrid__item--title">Panqueques Integrales</h2>
+              <div class="rgrid__item--image">
+                <img
+                  src="https://www.paulinacocina.net/wp-content/uploads/2019/10/panqueques-integrales-800x534.jpg"
+                  alt="panques integrales"
+                  width="100%"
+                />
+                <h3 class="rgrid__item--subt">Ingredientes</h3>
+                <ul class="rgrid__item--ul">
+                  <li class="rgrid__item--li">Lorem ipsum dolor sit amet consectetur.</li>
+                  <li class="rgrid__item--li">Lorem ipsum dolor sit amet consectetur.</li>
+                  <li class="rgrid__item--li">Lorem ipsum dolor sit amet consectetur.</li>
+                  <li class="rgrid__item--li">Lorem ipsum dolor sit amet consectetur.</li>
+                  <li class="rgrid__item--li">Lorem ipsum dolor sit amet consectetur.</li>
+                  <li class="rgrid__item--li">Lorem ipsum dolor sit amet consectetur.</li>
+                  <li class="rgrid__item--li">Lorem ipsum dolor sit amet consectetur.</li>
+                </ul>
+                <ol class="rgrid__item--ol">
+                  <li class="rgrid__item--li">Lorem ipsum dolor sit amet..</li>
+                  <li class="rgrid__item--li">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsum, delectus.
+                  </li>
+                  <li class="rgrid__item--li">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Perspiciatis labore non iusto aut.
+                  </li>
+                  <li class="rgrid__item--li">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </li>
+                  <li class="rgrid__item--li">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maxime, amet rerum.
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <div class="rgrid__item">
+              <h2 class="rgrid__item--title">Tiramisú</h2>
+              <div class="rgrid__item--image">
+                <img
+                  src="https://www.paulinacocina.net/wp-content/uploads/2020/01/tiramisu-raffaele-diomede-copy-800x534.jpg"
+                  alt="tiramisu"
+                  width="100%"
+                />
+                <h3 class="rgrid__item--subt">Ingredientes</h3>
+                <ul class="rgrid__item--ul">
+                  <li class="rgrid__item--li">Lorem ipsum dolor sit amet consectetur.</li>
+                  <li class="rgrid__item--li">Lorem ipsum dolor sit amet consectetur.</li>
+                  <li class="rgrid__item--li">Lorem ipsum dolor sit amet consectetur.</li>
+                  <li class="rgrid__item--li">Lorem ipsum dolor sit amet consectetur.</li>
+                  <li class="rgrid__item--li">Lorem ipsum dolor sit amet consectetur.</li>
+                  <li class="rgrid__item--li">Lorem ipsum dolor sit amet consectetur.</li>
+                </ul>
+                <ol class="rgrid__item--ol">
+                  <li class="rgrid__item--li">Lorem ipsum dolor sit amet..</li>
+                  <li class="rgrid__item--li">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsum, delectus.
+                  </li>
+                  <li class="rgrid__item--li">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Perspiciatis labore non iusto aut.
+                  </li>
+                  <li class="rgrid__item--li">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </li>
+                  <li class="rgrid__item--li">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maxime, amet rerum.
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <div class="rgrid__item">
+              <h2 class="rgrid__item--title">Galletas de Avena</h2>
+              <div class="rgrid__item--image">
+                <img
+                  src="https://www.paulinacocina.net/wp-content/uploads/2015/12/P1170312-e1451518988154.jpg"
+                  alt="galletas de avena"
+                  width="100%"
+                />
+                <h3 class="rgrid__item--subt">Ingredientes</h3>
+                <ul class="rgrid__item--ul">
+                  <li class="rgrid__item--li">Lorem ipsum dolor sit amet consectetur.</li>
+                  <li class="rgrid__item--li">Lorem ipsum dolor sit amet consectetur.</li>
+                  <li class="rgrid__item--li">Lorem ipsum dolor sit amet consectetur.</li>
+                  <li class="rgrid__item--li">Lorem ipsum dolor sit amet consectetur.</li>
+                  <li class="rgrid__item--li">Lorem ipsum dolor sit amet consectetur.</li>
+                  <li class="rgrid__item--li">Lorem ipsum dolor sit amet consectetur.</li>
+                  <li class="rgrid__item--li">Lorem ipsum dolor sit amet consectetur.</li>
+                </ul>
+                <ol class="rgrid__item--ol">
+                  <li class="rgrid__item--li">Lorem ipsum dolor sit amet..</li>
+                  <li class="rgrid__item--li">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsum, delectus.
+                  </li>
+                  <li class="rgrid__item--li">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Perspiciatis labore non iusto aut.
+                  </li>
+                  <li class="rgrid__item--li">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </li>
+                  <li class="rgrid__item--li">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maxime, amet rerum.
+                  </li>
+                </ol>
+              </div>
             </div>
         </div>
-    <section class="recipe__listing">
-      <div class="recipe__listing--position">
-        <h2 class="recipe__listing--headers">Recipe Name 1</h2>
-          <img src="http://pralinecakes.com/wp-content/uploads/2016/06/Screen-Shot-2020-08-21-at-20.30.30-600x754.png" alt="alfajores" class="recipe__listing--images"/>
-        <p class="recipe__listing--longText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate illum quas neque doloremque iusto dolor voluptates laborum cupiditate eos debitis vel recusandae corrupti eaque, dolorum architecto aliquam tenetur exercitationem sequi harum animi quaerat, consequatur itaque! Quis temporibus iste tenetur suscipit debitis minus aliquid porro, nulla omnis molestiae at numquam, quae voluptas provident sunt dolorem consequatur? Qui exercitationem accusantium quod! Debitis perspiciatis cumque animi blanditiis non commodi porro praesentium enim odio quidem quasi consectetur quia hic sit quisquam quas, eveniet delectus saepe tempore aliquam. Dolorum asperiores non reprehenderit et vitae sint totam? Repudiandae exercitationem laboriosam, minima corporis tempore facere vero iste.
-        <ul>
-        <h4 class="recipe__listing--headers">Ingredientes</h4>
-        <li class="recipe__listing--ingredients">Lorem, ipsum dolor.</li>
-        <li class="recipe__listing--ingredients">Lorem, ipsum dolor.</li>
-        <li class="recipe__listing--ingredients">Lorem, ipsum dolor.</li>
-        <li class="recipe__listing--ingredients">Lorem, ipsum dolor.</li>
-      </ul>
-      <ol>
-        <h4 class="recipe__listing--headers">Paso a paso</h4>
-        <li class="recipe__listing--steps">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos ullam repellendus dolorem minima deleniti expedita.</li>
-        <li class="recipe__listing--steps">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos ullam repellendus dolorem minima deleniti expedita.</li>
-        <li class="recipe__listing--steps">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos ullam repellendus dolorem minima deleniti expedita.</li>
-        <li class="recipe__listing--steps">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos ullam repellendus dolorem minima deleniti expedita.</li>
-        <li class="recipe__listing--steps">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos ullam repellendus dolorem minima deleniti expedita.</li>
-        <li class="recipe__listing--steps">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos ullam repellendus dolorem minima deleniti expedita.</li>
-        <li class="recipe__listing--steps">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos ullam repellendus dolorem minima deleniti expedita.</li>
-        <li class="recipe__listing--steps">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos ullam repellendus dolorem minima deleniti expedita.</li>
-      </ol>
-    </p>
-  </div>
-  <hr class="divider__rounded">
-  <br>
-  <div class="recipe__listing--position">
-    <h2 class="recipe__listing--headers">Recipe Name 2</h2>
-      <img src="http://pralinecakes.com/wp-content/uploads/2016/06/IMG_3274-scaled-e1597845777387.jpg" alt="brownies" width="50%" class="recipe__listing--images"/>
-    <p class="recipe__listing--longText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate illum quas neque doloremque iusto dolor voluptates laborum cupiditate eos debitis vel recusandae corrupti eaque, dolorum architecto aliquam tenetur exercitationem sequi harum animi quaerat, consequatur itaque! Quis temporibus iste tenetur suscipit debitis minus aliquid porro, nulla omnis molestiae at numquam, quae voluptas provident sunt dolorem consequatur? Qui exercitationem accusantium quod! Debitis perspiciatis cumque animi blanditiis non commodi porro praesentium enim odio quidem quasi consectetur quia hic sit quisquam quas, eveniet delectus saepe tempore aliquam. Dolorum asperiores non reprehenderit et vitae sint totam? Repudiandae exercitationem laboriosam, minima corporis tempore facere vero iste.
-      <ul>
-        <h4 class="recipe__listing--headers">Ingredientes</h4>
-        <li class="recipe__listing--ingredients">Lorem, ipsum dolor.</li>
-        <li class="recipe__listing--ingredients">Lorem, ipsum dolor.</li>
-        <li class="recipe__listing--ingredients">Lorem, ipsum dolor.</li>
-        <li class="recipe__listing--ingredients">Lorem, ipsum dolor.</li>
-      </ul>
-      <ol>
-        <h4 class="recipe__listing--headers">Paso a paso</h4>
-        <li class="recipe__listing--steps">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos ullam repellendus dolorem minima deleniti expedita.</li>
-        <li class="recipe__listing--steps">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos ullam repellendus dolorem minima deleniti expedita.</li>
-        <li class="recipe__listing--steps">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos ullam repellendus dolorem minima deleniti expedita.</li>
-        <li class="recipe__listing--steps">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos ullam repellendus dolorem minima deleniti expedita.</li>
-        <li class="recipe__listing--steps">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos ullam repellendus dolorem minima deleniti expedita.</li>
-        <li class="recipe__listing--steps">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos ullam repellendus dolorem minima deleniti expedita.</li>
-        <li class="recipe__listing--steps">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos ullam repellendus dolorem minima deleniti expedita.</li>
-        <li class="recipe__listing--steps">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos ullam repellendus dolorem minima deleniti expedita.</li>
-      </ol>
-    </p>
-  </div>
-    </section>
-  </main>
- <!--Inicio footer todas las páginas-->
- <footer class="footer">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-around">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup d-flex justify-content-around">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#">Privacidad</a>
-        <a class="nav-item nav-link" href="contacto.html">Contacto</a>
-      </div>
-    </div>
-  </nav>
-</footer>
-<!--Fin footer todas las páginas-->
+      </section>
+    </main>
+    <!--Inicio footer todas las páginas-->
+    <footer class="footer">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="footer__text collapse navbar-collapse"
+          id="navbarNavAltMarkup d-flex justify-content-around"
+        >
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#">Privacidad</a>
+            <a class="nav-item nav-link" href="contacto.html">Contacto</a>
+          </div>
+        </div>
+      </nav>
+    </footer>
+    <!--Fin footer todas las páginas-->
   </body>
 </html>

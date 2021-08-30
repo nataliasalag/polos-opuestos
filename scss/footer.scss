@@ -1,0 +1,14 @@
+@import "variables";
+
+.footer {
+  justify-content: space-around;
+  box-sizing: border-box;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: $text-size * 8;
+    text-decoration: underline;
+  }
+}

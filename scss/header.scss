@@ -1,0 +1,18 @@
+@import "variables";
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  .header__logo {
+    max-width: 2.18rem;
+    float: left;
+    clip-path: circle(0.94rem at center);
+    height: 2.18rem;
+    margin-left: 0.5rem;
+  }
+}
