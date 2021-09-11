@@ -1,44 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Polos Opuestos</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,500;1,100;1,200;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&family=Zen+Loop:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="index-style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,500;1,100;1,200;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&family=Zen+Loop:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="description" content="Tienda online de postres light."/>
+      <meta name="keywords" content="postres, fit, light, postres light."/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Polos Opuestos</title>
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="css/main.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,500;1,100;1,200;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&family=Zen+Loop:ital@0;1&display=swap"
+        rel="stylesheet"
+      />
     <title>Polos Opuestos</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark header">
       <div class="container-fluid">
-        <img
-          src="images/png2jpg/polos-opuestos-logo.jpg"
-          alt="logo-polos"
-          class="header__logo"
-        />
+        <div class="header__logo">
+          <img src="images/png2jpg/polos-opuestos-logo.jpg" alt="logo-polos" />
+        </div>
         <button
           class="navbar-toggler"
           type="button"
@@ -108,7 +100,7 @@
               <a class="nav-link text-white" href="contacto.html">Contacto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="qa.html"
+              <a class="nav-link text-white" href="q&a.html"
                 >Preguntas Frecuentes</a
               >
             </li>
@@ -126,77 +118,41 @@
       </div>
     </nav>
     <!--End on all pages-->
-    <main class="main__qa">
-      <h1 class="qa__headersText qa">Preguntas Frecuentes</h1>
-      <div class="qa__envios">
-        <h2 class="qa__headersText">Envíos</h2>
-        <p class="qa__listing--longText">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam at, sit
-          corrupti quos itaque id necessitatibus facere error magnam vero? Vel,
-          maiores voluptatibus velit laboriosam vero dolores odit voluptas quas
-          perferendis exercitationem, dicta quod beatae culpa suscipit magni, ut
-          praesentium numquam eum iste error nam voluptate iure aut omnis! Optio
-          tenetur quibusdam quidem pariatur porro sequi culpa nobis labore
-          aliquid?
+    <main>
+      <h1 class="qaheader">Preguntas Frecuentes</h1>
+      <div class="qa">
+        <h2 class="qa_text">Envíos</h2>
+        <p class="qa_text--p">
+            Nuestros envíos se realizan dentro delas 24 a 48hs de realizado el pedido según sea acordado al momento de la compra. De momento hacemos envíos únicamente en Bogotá y alrededores. (<a class="envios__text--link" href="contacto.html"> Consultar</a> antes de comprar)
         </p>
       </div>
-      <div class="qa__consideraciones">
-        <h2 class="qa__headersText">Consideraciones</h2>
-        <p class="qa__listing--longText">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam at, sit
-          corrupti quos itaque id necessitatibus facere error magnam vero? Vel,
-          maiores voluptatibus velit laboriosam vero dolores odit voluptas quas
-          perferendis exercitationem, dicta quod beatae culpa suscipit magni, ut
-          praesentium numquam eum iste error nam voluptate iure aut omnis! Optio
-          tenetur quibusdam quidem pariatur porro sequi culpa nobis labore
-          aliquid?
+      <div class="qa">
+        <h2 class="qa_text">Consideraciones</h2>
+        <p class="qa_text--p">
+          Nuestros productos no contienen conservantes ni preservante, por lo que además de conservarlos en lugares frescos, se recomienda consumirlos dentro de las 24-48hs.
         </p>
       </div>
-      <div class="qa__precios">
-        <h2 class="qa__headersText">Precios</h2>
-        <p class="qa__listing--longText">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam at, sit
-          corrupti quos itaque id necessitatibus facere error magnam vero? Vel,
-          maiores voluptatibus velit laboriosam vero dolores odit voluptas quas
-          perferendis exercitationem, dicta quod beatae culpa suscipit magni, ut
-          praesentium numquam eum iste error nam voluptate iure aut omnis! Optio
-          tenetur quibusdam quidem pariatur porro sequi culpa nobis labore
-          aliquid?
+      <div class="qa">
+        <h2 class="qa_text">Precios</h2>
+        <p class="qa_text--p">
+          Los precios de nuestros productos varían según el tamaño, en el caso de las tortas, y la cantidad en el caso de los cuadraditos.
         </p>
       </div>
     </main>
     <!--Inicio footer todas las páginas-->
-    <footer class="footer">
-      <nav
-        class="
-          navbar navbar-expand-lg navbar-light
-          bg-light
-          d-flex
-          justify-content-around
-        "
-      >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse"
-          id="navbarNavAltMarkup d-flex justify-content-around"
-        >
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Privacidad</a>
-            <a class="nav-item nav-link" href="contacto.html">Contacto</a>
-          </div>
-        </div>
-      </nav>
-    </footer>
-    <!--Fin footer todas las páginas-->
+<footer class="footer">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="footer__text  collapse navbar-collapse" id="navbarNavAltMarkup d-flex justify-content-around">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="#">Privacidad</a>
+        <a class="nav-item nav-link" href="contacto.html">Contacto</a>
+      </div>
+    </div>
+  </nav>
+</footer>
+<!--Fin footer todas las páginas-->
   </body>
 </html>

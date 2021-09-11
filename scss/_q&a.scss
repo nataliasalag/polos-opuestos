@@ -1,0 +1,21 @@
+.qaheader {
+  font-size: $title-size;
+  text-decoration: $title-decor;
+  font-family: $main-font;
+}
+
+.qa {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-family: $secondary-font;
+  &_text {
+    font-family: $main-font;
+    font-size: $text-size * 20;
+    &--p {
+      font-family: $secondary-font;
+    }
+    &--link {
+      color: $primary-color;
+    }
+  }
+}
